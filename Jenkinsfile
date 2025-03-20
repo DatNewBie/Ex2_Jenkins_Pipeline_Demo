@@ -5,25 +5,25 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''
+                sh """
                 echo "doing build stuff.."
-                '''
+                """
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh '''
+                sh """
                 echo "doing test stuff.."
-                '''
+                """
             }
         }
         stage('Deliver') {
             steps {
                 echo "Deliver...."
-                sh '''
+                sh """
                 echo "doing delivery stuff.."
-                '''
+                """
             }
         }
     }
